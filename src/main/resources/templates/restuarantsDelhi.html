@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Restaurants of Delhi</title>
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/simplex/bootstrap.min.css"/>
+	</head>
+	
+	<body>
+		<h1 align ="center">Make Your Life Easier By Navigator</h1>
+		
+		<img th:src="@{/images/imad2.jpg}" width="100%" height="70%">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" onclick="">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav me-auto">
+					  
+						<!--Home-->
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Home
+								<span class="visually-hidden">(current)</span>
+							</a>
+						</li>  
+						
+						<!--Covid-->
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.mohfw.gov.in/">Covid19 Guidelines</a>
+						</li>
+						  
+						<!--Google Map-->
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.google.co.in/maps/place/India/@18.2704539,64.8520339,3.36z/data=!4m13!1m7!3m6!1s0x30635ff06b92b791:0xd78c4fa1854213a6!2sIndia!3b1!8m2!3d20.593684!4d78.96288!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288">Map</a>
+						</li>
+						
+						<!--Back-->
+						<li class="nav-item">
+							<a class="nav-link" th:href="@{/placesDelhi}">Back</a>
+						</li>
+						  
+						<!--Logout-->    
+	                    <li class="nav-item">
+	                    	<a class="nav-link" th:href="@{/}">Logout</a>
+	                    </li>
+					</ul>
+				</div>     
+			</div>
+		</nav> 
+		
+		<br>
+		
+		<h3 align="center">Suggested Restaurants</h3>
+		
+		<div class="container">
+			<table>
+				<tr>
+					<!--World of Idli's-->
+					<a href="http://www.kesardadhaba.com/">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">
+							<img th:src="@{/images/world-of-idli.jpg}" width="200px" height="200px" alt="World of Idli's"><br>
+							<h6>World of Idli's</h6>
+						</button>
+					</a>
+				</tr>
+				
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+				<tr>
+					<!--Cha Bar-->
+					<a href="https://chabar.in/">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">
+							<img th:src="@{/images/cha-bar.jpg}" width="200px" height="200px" alt="Cha Bar"><br>
+							<h6>Cha Bar</h6>
+						</button>
+					</a>
+				</tr>
+				
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+				<tr>
+					<!--Prego Restaurant-->
+					<a href="https://www.clubmarriott.in/hotels-and-resorts/outlet/delhi-ncr/the-westin-gurgaon-new-delhi/prego/dining">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">
+							<img th:src="@{/images/prego.jpg}" width="200px" height="200px" alt="Prego Restaurant"><br>
+							<h6>Prego Restaurant</h6>
+						</button>
+					</a>
+				</tr>
+				
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+				<tr>
+					<!--Soda Bottle Opener Wala-->
+					<a href="https://www.sodabottleopenerwala.in/mall-of-india-noida/">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">
+							<img th:src="@{/images/soda-bottle.jpg}" width="200px" height="200px" alt="Soda Bottle Opener Wala"><br>
+							<h6>Soda Bottle Opener Wala</h6>
+						</button>
+					</a>
+				</tr>
+				
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+				<tr>
+					<!--All Restaurants in Delhi-->
+					<a href="otherRestaurants.html">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">
+							<img th:src="@{/images/punjabi-janata-dhaba.jpg}" width="200px" height="200px" alt="Restaurants"><br>
+							<h6><a th:href="otherRestaurantsDelhi">All Restaurants</a></h6>
+						</button>
+					</a>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
